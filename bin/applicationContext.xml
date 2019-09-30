@@ -15,15 +15,25 @@
     		class="com.spring.examples.FordCar">
     	</bean>
     
- <!-- 	<bean id="myCoach"
- 		class="com.luv2code.springdemo.TrackCoach">	 		
- 	</bean> -->
-
-    <!--
-    <bean id="myCoach"
-        class="com.luv2code.springdemo.BaseballCoach">         
+    
+    <bean id="hyndaiCar" class="com.spring.examples.HyndaiCar">
+    
     </bean>
-    -->
+    
+    
+      <!-- Constructor Injection -->
+    
+    <bean id="dollar" class="com.spring.examples.DollarCurrency">
+      <constructor-arg type="String" value="dollar"></constructor-arg>
+    </bean>
+    
+    <bean id="rupee" class="com.spring.examples.RupeeCurrency">
+    <constructor-arg type="String" value="Rupee"></constructor-arg>
+    <constructor-arg type="Integer" value="100"></constructor-arg>
+    </bean>
+    
+    
+
 
 </beans>
 
