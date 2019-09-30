@@ -1,10 +1,7 @@
 package com.spring.examples;
 
-public class Car {
+public interface Car {
 	
-	public String getName() {
-		return "Hyndai";
-		
-	}
+	public String getName() ;
 
 }
