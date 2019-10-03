@@ -7,6 +7,8 @@
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context.xsd">
 
+ <!-- <context:property-placeholder location="classpath:currency.properties">
+    </context:property-placeholder> -->
 	
     <!-- Define your beans here -->
     
@@ -27,10 +29,16 @@
       <constructor-arg type="String" value="dollar"></constructor-arg>
     </bean>
     
-    <bean id="rupee" class="com.spring.examples.RupeeCurrency">
+  <!--   <bean id="rupee" class="com.spring.examples.RupeeCurrency">
     <constructor-arg type="String" value="Rupee"></constructor-arg>
     <constructor-arg type="Integer" value="100"></constructor-arg>
+    </bean> -->
+    
+    <bean id="rupee" class="com.spring.examples.RupeeCurrency">
+    <constructor-arg type="String" value="${type}"></constructor-arg>
+    <constructor-arg type="Integer" value="${value}"></constructor-arg>
     </bean>
+
     
     
 
