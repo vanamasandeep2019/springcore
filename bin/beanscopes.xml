@@ -16,7 +16,7 @@
     	</bean>
     
     
-    <bean id="hyndaiCar" class="com.spring.examples.HyndaiCar">
+    <bean id="hyndaiCar" class="com.spring.examples.HyndaiCar" scope="prototype">
     
     </bean>
     
