@@ -6,28 +6,35 @@
     http://www.springframework.org/schema/beans/spring-beans.xsd
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context.xsd">
-
-	
-    <!-- Define your beans here -->
-    
-    <!-- define the dependency -->
-    <bean id="fordCar"
-    		class="com.spring.examples.FordCar">
-    	</bean>
     
     
-    <bean id="hyndaiCar" class="com.spring.examples.HyndaiCar" scope="prototype">
+    
+    <bean id="rupeeCurrency" class="com.spring.examples.RupeeCurrency" init-method="myInit" destroy-method="myDestroy">
     
     </bean>
     
     
     
     
-
-
-</beans>
-
-
-
-
-
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </beans>

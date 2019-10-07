@@ -16,12 +16,22 @@ public class BeanScopeDemo {
 		Car fordNewCar=context.getBean("fordCar",Car.class);
 		
 		
+		Car hyndaiCar=context.getBean("hyndaiCar",Car.class);
+		Car hyndaiCar1=context.getBean("hyndaiCar",Car.class);
+		
+		
 		System.out.println(fordNewCar.hashCode());
 		System.out.println(fordCar.hashCode());
 		
 		//Compare two objects are equal or not
 		
+		System.out.println("Singleton Example");
+		
 		System.out.println(fordCar==fordNewCar);
+		
+		System.out.println("Prototype Example");
+		
+		System.out.println(hyndaiCar==hyndaiCar1);
 		
 		//close the context
 		 context.close();
